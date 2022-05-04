@@ -115,6 +115,7 @@ def parse_jdata(jsondata,pmid):
         
     print('<li class="mylistyle"><span class="pmed"><b>'+ i_title+'</b> Authors:'+i_allauthors+'<i><b>'+ i_volume + i_issue+',</b> '+i_journal+'</i> ('+i_year+') <a href="'+doi_url+i_doi+'">Pubmed Link</a></span></li>')
 
+#Create a list for the web page
 print ("<ul>")
 for pmid_ch in pmid_chunks:
     pmid_str = ','.join(map(str,pmid_ch))
